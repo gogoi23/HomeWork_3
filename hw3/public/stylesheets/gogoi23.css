@@ -1,0 +1,97 @@
+/* Anand Gogoi*/
+/* background image*/
+body{
+    background-image:url('background.jpeg') ;
+}
+
+.Title{
+    font-family: "Garamond";
+    color:rgb(193, 46, 75);
+    background-color:#e1e1c4;
+}
+
+.radio {
+    position:relative; 
+    left:60px;
+    
+}
+
+.radio2 {
+    position:relative; 
+    left:26px;
+    
+}
+
+/* format for the radio buttons and dropdown background*/
+.wrapper{
+    background-color: #e1e1c4;
+    color:rgb(193, 46, 75);
+}
+
+.quant{
+    color: rgb(193, 46, 75);
+    background-color: #dfa42d;
+    border-radius: 10px;
+}
+
+img{
+    border-radius : 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropbtn {
+    background-color: transparent;
+    padding: 16px;
+    font-size: 16px;
+    
+  }
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+    overflow-y:scroll;
+    max-height:250px;/* you can change as you need it */
+    overflow-x:hidden; /* hides the horizontal scroll*/
+        
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+  

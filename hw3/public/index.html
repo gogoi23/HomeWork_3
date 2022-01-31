@@ -1,0 +1,109 @@
+<!--Anand Gogoi--> 
+<html>
+    <body>
+        <!-- Title--> 
+    
+        <h1 class = "Title"> 
+            <!-- css file used to style the page-->
+            <link rel = "stylesheet" href = "stylesheets/gogoi23.css">
+
+            <script 
+                script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"/>
+                script src = "javascripts/main/js"
+            </script>
+
+
+            Cheese Cake Order Form 
+        </h1>
+
+        <!-- cheese cake picure-->
+        <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg/1599px-Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" style="width:300px;height:300px;">
+        
+
+
+         <!--form with all the radio buttons and inputs  -->
+        <form> 
+            <div class = "wrapper" id = "submissionInputs">
+                <br><head> 
+                    Quantity Topping     
+                </head><br>
+
+                 <!--radio button -->
+                <input type="radio" id="plain" value="Plain" name="toppings" class = "radio" style = "position:relative; 
+                left:60px;">
+                <label for="plain" class = radio style = "position:relative; 
+                left:60px;"> Plain </label><br>
+
+                 <!--drop down option -->
+                <select name="cars" id="option" class = "quant">
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                </select>
+                <!-- radio buttons -->
+                <input type="radio" id="cherry" value="Cherry" name="toppings" class = "radio2" style = "position:relative; 
+                left:26px;" >
+                <label for="cherry" class = "radio2" style = "position:relative; 
+                left:26px;">Cherry</label><br>
+                <input type="radio" id="chocolate" value="Chocolate" name="toppings" class = "radio" style = "position:relative; 
+                left:60px;" >
+                <label for="chocolate"  class = "radio" style = "position:relative; 
+                left:60px;">Chocalate</label><br>
+           
+
+                <!-- place holder test-->
+                <header> Notes: </header>
+                <textarea placeholder = "Enter any special instructions here"  rows="5" cols="50" id = "notes"> </textarea>
+            
+                <!-- submission button-->
+                <br><br>
+                <button type='button' id = "orderButton"> Order </button>
+            </div>
+
+            <div class = "wrapper" id = "orderConfirmation">
+                <br>
+                <h7> Thank you for Ordering!</h7><br>
+                <h7 id = "Topping_Details"></h7><br>
+                <h7 id = "Quantity_Details"></h7> <br>
+                <h7 id = "Instruction_Details"><h7>
+            </div>
+
+            <br>
+            
+            <!-- displays total orders last month-->
+            <h3 style = "display:inline-block;"> Total Orders for </h3> 
+            
+           
+            <div class="dropdown">
+                 <!-- Dropdown Hover Button copied from https://www.w3schools.com/howto/howto_css_dropdown.asp -->
+                <button class="dropbtn" type='button' id = "monthButton">Jan</button>
+                <div class="dropdown-content">
+                    <a class = "month" >Jan</a>
+                    <a class = "month">Feb</a>
+                    <a class = "month">Mar</a>
+                    <a class = "month">Apr</a>
+                    <a class = "month">May</a>
+                    <a class = "month">Jun</a>
+                    <a class = "month">Jul</a>
+                    <a class = "month">Aug</a>
+                    <a class = "month">Sep</a>
+                    <a class = "month">Oct</a>
+                    <a class = "month">Nov</a>
+                    <a class = "month">Dec</a>
+                </div>
+            </div>
+            
+            <!-- <button type='button' style="border:1px solid black; background-color: transparent;"> <h3>January</h3> </button> -->
+            
+            
+            <ul>
+                <li>11 cherry</li>
+                <li>17 chocolate</li>
+                <li>31 plain</li>
+            </ul> 
+
+        </form>
+    </body>
+</html>
+
